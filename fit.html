@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="fit.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fitness Tracker</h1>
+        </header>
+        <main>
+            <section class="forms">
+                <div class="form-container">
+                    <h2>Log Workout</h2>
+                    <form id="workout-form">
+                        <input type="text" id="workout-type" placeholder="Workout Type" required>
+                        <input type="number" id="duration" placeholder="Duration (minutes)" required>
+                        <input type="date" id="date" required>
+                        <button type="submit">Add Workout</button>
+                    </form>
+                </div>
+                <div class="form-container">
+                    <h2> SET Fitness Goal</h2>
+                    <form id="goal-form">
+                        <input type="text" id="goal-description" placeholder="Goal Description" required>
+                        <input type="date" id="goal-date" required>
+                        <button type="submit">Set Goal</button>
+                    </form>
+                </div>
+            </section>
+            <section class="progress">
+                <div class="list-container">
+                    <h2>Workouts</h2>
+                    <ul id="workout-list"></ul>
+                </div>
+                <div class="list-container">
+                    <h2>Goals</h2>
+                    <ul id="goal-list"></ul>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="fit.js"></script>
+</body>
+</html>
